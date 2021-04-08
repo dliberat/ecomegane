@@ -17,9 +17,11 @@ pip install ecomegane
 
 To begin downloading data, you will need to find your power plant's ID number on the Eco Megane site.
 
+![Site ID](https://github.com/dliberat/ecomegane/raw/master/docs/img/site_id.png)
+
 ## Example Usage
 
-For a complete sample, see `sample.py`.
+For a complete sample, see `docs/sample.py`.
 
 **Downloading hourly data**
 
@@ -27,7 +29,7 @@ For a complete sample, see `sample.py`.
 import datetime
 from ecomegane import EcoMeganeClient
 
-site_id = '002434234'
+site_id = '00031234567'
 today = datetime.date.today()
 
 with EcoMeganeClient('username', 'password') as client:
@@ -43,7 +45,7 @@ with EcoMeganeClient('username', 'password') as client:
 import datetime
 from ecomegane import EcoMeganeClient
 
-site_id = '002434234'
+site_id = '00031234567'
 today = datetime.date.today()
 
 with EcoMeganeClient('username', 'password') as client:
